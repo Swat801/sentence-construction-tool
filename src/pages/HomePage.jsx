@@ -1,5 +1,6 @@
 import instructions from '../assets/instructions';
 import useAppContext from '../context/AppContext';
+import icon from './assets/images/Icons.png';
 
 const HomePage = () => {
   const { navigate, testCompleted, quit } = useAppContext();
@@ -7,7 +8,7 @@ const HomePage = () => {
   return (
     <div className="flex flex-col items-center mt-25 gap-y-10">
       {/* logo */}
-      <img src="./src/assets/images/Icons.png" alt="logo" />
+      <img src={icon} alt="logo" />
 
       {/* Heading and Description */}
       <div className="text-center space-y-3.5">
