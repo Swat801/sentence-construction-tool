@@ -18,7 +18,7 @@ export const AppContextProvider = ({ children }) => {
 
   const fetchQuestions = async () => {
     try {
-      const { data } = await axios.get('http://localhost:3001/response');
+      const { data } = await axios.get('https://mock-api-1myr.onrender.com/response');
       if (data.status === 'SUCCESS') {
         setQuestions([...data.data.questions]);
       } else {
