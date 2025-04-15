@@ -1,6 +1,6 @@
 import instructions from '../assets/instructions';
 import useAppContext from '../context/AppContext';
-import icon from './assets/images/Icons.png';
+import icon from '../assets/images/Icons.png';
 
 const HomePage = () => {
   const { navigate, testCompleted, quit } = useAppContext();
